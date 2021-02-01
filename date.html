@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		span {
+			position: absolute;
+			border: solid black;
+			background-color: orange;
+			font-size:40px;
+			padding: 10px;
+			top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<span id="time"></span>
+	
+	<script type="text/javascript">
+
+		function displayTime(){
+        time = new Date();
+     
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displayTime,  1000);
+</script>
+
+</body>
+</html>

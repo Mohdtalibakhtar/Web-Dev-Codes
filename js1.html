@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div class="con">
+	<h1>Events</h1>
+	<p id="para">With our growing obsession of food culture, and an estimate of 16 million restaurants worldwide, there is one neglected element that has been right in front of us all this time: the menu. When it comes to profits, the menu is not only important; it is everything in a successful restaurant brand identity. Research has found that a customer only takes an average of 109 seconds reading a menu. This is the time limit one has to impress and sell. This essay will outline different ways and means on how the graphic designer under-take different methods to turn the menu into a sales tool for the restaurant and will discuss menu design techniques to help boost the effectiveness of the ‘silent salesperson’ onto customers and increase profits (Pavesic, 2013).</p>
+</div>
+<button id="btn"onclick="Hide()">Show/Hide</button>	
+<script type="text/javascript">
+	let para = document.getElementById('para');
+	para.addEventListener('mouseover', function run(){
+		console.log('Mouse inside')
+	});
+	para.addEventListener('mouseout', function run(){
+		console.log('Mouse Outside')
+	});
+	function Hide(){
+		let btn=document.getElementById('btn');
+		let para=document.getElementById('para');
+		
+		if (para.style.display!='none'){
+			para.style.display='none';
+		}
+		else 
+			para.style.display='block';
+	}
+</script>
+</body>
+</html>

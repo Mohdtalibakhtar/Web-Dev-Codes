@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	obj= {
+		name: "Talib",
+		language: "JavaScript",
+		course: "Btech"
+	}
+	console.log(obj);
+	myobj = JSON.stringify(obj);
+	console.log(myobj);
+
+	myobj= myobj.replace('JavaScript', 'JSON')
+	console.log(myobj);
+
+	newjson=JSON.parse(myobj);
+	console.log(newjson)
+</script>
+</body>
+</html>
